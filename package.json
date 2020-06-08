@@ -9,6 +9,9 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "gsap": "^3.2.6",
+    "normalize.css": "^8.0.1",
+    "svg-inline-loader": "^0.8.2",
     "vue": "^2.6.11"
   },
   "devDependencies": {

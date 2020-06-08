@@ -1,0 +1,5 @@
+body {
+    @include antialiasing();
+    font-family: $font-primary;
+    font-weight: 350;
+}

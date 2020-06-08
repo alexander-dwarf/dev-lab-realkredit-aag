@@ -1,0 +1,21 @@
+@mixin antialiasing($type: antialiased) {
+    -webkit-font-smoothing: $type;
+    font-smoothing: $type;
+    font-smooth: always;
+
+    * {
+        -webkit-font-smoothing: inherit;
+        font-smoothing: inherit;
+        font-smooth: inherit;
+    }
+}
+
+@mixin res($width, $dir: min) {
+    @if $width== 'desktop' {
+        $width: 1025;
+    }
+
+    @media (#{$dir}-width: $width + "px") {
+        @content;
+    }
+}
